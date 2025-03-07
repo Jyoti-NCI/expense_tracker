@@ -22,7 +22,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.11'
+        python-version: '3.13'
  
     - name: Install dependencies
       run: |
@@ -39,7 +39,7 @@ jobs:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         region: ${{ secrets.AWS_REGION }}
-        application_name: "Devops_Expense"    # Replace with your EB app name
-        environment_name: "DevopsExpense-env"    # Replace with your EB environment name
+        application_name: "expense_tracker"    # Replace with your EB app name
+        environment_name: "Expensetracker-env"    # Replace with your EB environment name
         version_label: "v-${{ github.run_number }}"
         deployment_package: "deploy-package.zip"
