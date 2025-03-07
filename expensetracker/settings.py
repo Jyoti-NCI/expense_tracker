@@ -24,8 +24,8 @@ SECRET_KEY = 'django-insecure-q9jz)9+4(nuo-+hag&6b%o*6)c_@k(5hu768-_lqvrx8$mvgrc
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
-ALLOWED_HOSTS = []
+# CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['*']
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'expense_list'
