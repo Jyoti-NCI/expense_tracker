@@ -1,4 +1,4 @@
-name: Deploy Django to AWS Elastic Beanstalk
+name: Deploy Expense Tracker Django Application to AWS Elastic Beanstalk
  
 on:
   push:
